@@ -1,0 +1,31 @@
+strong 강조
+
+u 밑줄
+
+h 제목 /숫자 오를수록 크기 작아짐
+
+br 줄바꿈(뒤에 /필요 x)
+
+p 단락
+<p "style=margin-top:40px;">
+
+<img 이미지 unsplash.com 참조  width="100%", src="image1.jpg">
+
+도구상자 없어지면 alt v
+
+li 목록화
+ctrl누르고 선택하면 다중 입력 가능
+tab 들여쓰기
+ul 목록애들 그룹화(unordered list)
+ol 숫자 자동 넘버링(ordered list)
+
+title 제목
+
+meta charset="utf-8" 한국어 표출
+
+a 링크 a href="https://www.w3.org/" target="_blank" tilte="html5 specification"
+
+head body
+
+
+
