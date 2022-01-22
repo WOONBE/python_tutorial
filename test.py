@@ -1,1 +1,1 @@
-print("for test")
+print("재수")
