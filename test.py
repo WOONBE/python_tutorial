@@ -11,3 +11,14 @@ for number in numbers:
     else:
         counter[number] = 1
 print(counter)
+
+x = [1,2,3,4,4,2,3,1,1]
+count = {}
+
+for n in x:
+    count[n] = 1
+    if(n == count[n]):
+        count[n] = count[n] + 1
+    
+
+print(count)
