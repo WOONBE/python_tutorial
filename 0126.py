@@ -55,3 +55,24 @@ print(list)
 
 
 
+
+import random
+
+flag = True
+num = random.randint(1,100)
+
+
+while flag:
+    x = int(input("숫자를 입력하세요: "))
+    if(x == num):
+        flag = False
+    else:
+        if(x < num):
+            print("Up")
+        elif(x > num):
+            print("Down")
+    
+print("정답!")
+
+
+
