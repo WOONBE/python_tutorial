@@ -32,3 +32,4 @@ print()
 output_b = filter(under_3, list_input_a)
 print(output_b)
 print(list(output_b))
+
