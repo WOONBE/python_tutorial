@@ -14,3 +14,8 @@ student = Student("윤인성", 3)
 student.출력()
 print(str(student))
 
+import math
+import math as 수학
+from math import pi, sin
+from math import *
+
