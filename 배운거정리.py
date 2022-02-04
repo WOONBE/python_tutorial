@@ -21,6 +21,7 @@ a.upper/lower() 형식으로 사용
 
 #in
 print("a" in "abcde") 식으로 사용해서 안에 있는지 찾기
+값 in 리스트 형식으로 사용
 
 #split
 a = "10 20 30 40 50".split(" ")
@@ -46,7 +47,35 @@ list = [a, b, c, d, e]
 #요소 추가하기
 list.append(요소) 끝에 요소 추가
 list.insert(위치,요소) 원하는 위치에 요소 추가
+list.extend([4,5,6]) extend는 한번에 여러개 추가 원할때 사용
 
+#요소 제거하기
+del list[인덱스] 둘다 위치기반으로 제거
+list.pop(인덱스)
+list.remove(값) 얜 위치기반 아님, 가장 앞에 있는거 하나만 제거
+list.clear() 모두 다 제거
 
+#for 반복문
+ex) for i in range(1,10,3)
 
+#딕셔너리
+list = [] / dict = {}으로 선언함 / 꺼내쓸땐 []사용해서 꺼내씀
+dict = {
+    "name" = "건조망고",
+    "type" = "당절임"
+}
+#이런식으로 큰따옴표를 붙여서 정의해야 오류가 안뜸
 
+#딕셔너리에 값 추가/제거
+추가: 딕셔너리["새로운키"] = 새로운 값
+제거: del dictionary["키"]
+
+#내부에 키 확인은 in 사용 or get()사용
+if key in dictionary:
+    print(dictionary[key])
+
+value = dictionary.get("존재하지 않는 키")
+print(value)
+
+for key in dictionary:
+    코드
