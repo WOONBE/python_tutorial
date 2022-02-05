@@ -79,3 +79,8 @@ print(value)
 
 for key in dictionary:
     코드
+
+#4-3부터 시작
+
+#범위
+#a = range(1,10,3) 이면 1에서 9사이에 3의배수를 구해준다
