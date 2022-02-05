@@ -84,3 +84,67 @@ for key in dictionary:
 
 #범위
 #a = range(1,10,3) 이면 1에서 9사이에 3의배수를 구해준다
+
+#반대로 반복하기
+1. for i in range(4, -1)식으로 -를 넣어준다
+2. for i in reversed(range(5)) reversed를 넣어준다
+
+#while 반복문
+#덧셈이면 0을 곱셈이면 1을 먼저 선언해주고 ex)number = 0 or 1
+while number<10:
+    print("sssssss")
+    number += 1 이런식으로 무한 반복이 되게 설정
+
+#break / continue
+
+#5장 함수
+def 함수 이름():
+    문장 식으로 사용
+
+#가변 매개변수
+def 함수이름(매개변수, 매개변수, ..., *가변 매개변수):
+    문장
+#가변 매개변수 뒤에는 일반 매개변수 불가/ 가변 매개변수는 하나만 사용가능
+
+#기본 매개변수
+(value, '매개변수 = 값'(기본매개변수))
+맨앞은 가변 매개변수이고 뒤에 값이 기본매개변수임
+보통 가변 기본 순으로 사용함
+
+#키워드 매개변수(좀 햇갈림)
+
+#return
+def return_test():
+    return 100 
+value = return_test()
+print(value) (100을 안적으면 None으로 출력됨)
+
+#기본적인 함수 활용
+def 함수(매개변수):
+    변수 = 초기값(덧셈이면 0/ 곱셈이면 1)
+    여러가지 처리
+    여러가지 처리
+    여러가지 처리
+    return 변수
+
+def sum_all(start=0, end=100, step=1):
+    output = 0
+    for i in range(start, end+1, step):
+        output += 1
+    return output
+
+print(sum_all(0, 100, 2))
+
+#튜플
+tuple_test = (데이터, 데이터, 데이터 , .....)식으로 사용
+-하나만 넣어서 정의하려면 tuple = (273,)처럼 ',' 넣어서 정의해야함
+-괄호 없이도 사용 가능함
+
+a, b = 10, 20
+a, b = b, a
+#print(a, b) 하면 20, 10이 나옴
+
+#람다부터 시작
+
+
+
