@@ -214,7 +214,7 @@ except 예외의 종류B:
 
 #7강부터 시작
 #7강 모듈
-from re import M
+
 import 모듈 이름
 
 1) import math 수학공식 사용
@@ -237,7 +237,20 @@ import random
 1-7)time 모듈
 1-8)urllib 모듈
 
+7-2 외부 모듈
+-모듈 설치
+pip install 모듈 이름
 
+beautifulsoup 모듈
+
+라이브러리: 정상적인 제어를 하는 모듈
+프레임워크: 제어 역전이 발생하는 모듈
+
+7-3
+엔트리 포인트인지 확인
+if __name__ == "__main__":
+
+바이너리 데이터: 텍스트 에디터로 열었을때 의미를 이해할 수 없는 데이터
 
 
 
