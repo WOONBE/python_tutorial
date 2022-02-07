@@ -232,7 +232,10 @@ import random
 하고 random.random()식으로 값을 뽑아냄 ()안에는 범위 넣는거 가능
 
 1-4)sys 모듈
-
+1-5)os 모듈
+1-6)datetime 모듈
+1-7)time 모듈
+1-8)urllib 모듈
 
 
 
