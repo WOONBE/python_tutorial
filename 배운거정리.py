@@ -253,6 +253,36 @@ if __name__ == "__main__":
 바이너리 데이터: 텍스트 에디터로 열었을때 의미를 이해할 수 없는 데이터
 
 
+#8장 클래스
+객체: 여러가지 속성을 가질 수 있는 대상
+인스턴스: 클래스를 기반으로 만들어진 객체
+
+클래스 선언하기
+class 클래스 이름:
+    클래스 내용
+인스턴스 이름(변수 이름) = 클래스 이름()
+
+ex) class Student:
+    pass
+student = Student()
+
+생성자(클래스 이름과 같은 함수)
+class 클래스 이름:
+    def __init__(self, 추가적인 매개변수):
+        pass
+
+ex) class Student:
+    def __init__(self, name, korean, math):
+        self.name = name
+        self.korean = korean'
+        self.math = math
+
+#메소드(클래스가 가지고 있는 함수)
+class 클래스 이름:
+    def 메소드 이름(self, 추가적인 매개변수):
+        pass
+
+8-2부터 시작
 
 
 
