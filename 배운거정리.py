@@ -213,6 +213,25 @@ except 예외의 종류B:
     예외가 발생했을 때 실행할 구문
 
 #7강부터 시작
+#7강 모듈
+from re import M
+import 모듈 이름
+
+1) import math 수학공식 사용
+1-1)from 구문
+-from 모듈이름 import 가져오고 싶은 변수 또는 함수
+ex) from math import sin, cos, tan, fllor, ceil(모두 가져오기는 *만 치면 끝)
+
+1-2)as 구문
+-import 모듈 as 사용하고 싶은 식별자
+ex)import math as m
+m.sin() 식으로 사용
+
+1-3)random 모듈
+import random
+하고 random.random()식으로 값을 뽑아냄 ()안에는 범위 넣는거 가능
+
+1-4)sys 모듈
 
 
 
