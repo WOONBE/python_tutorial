@@ -37,12 +37,12 @@ character_speed = 0.6
 
 
 # 적 enemy 캐릭터
-enemy = pygame.image.load("C:\\Users\\KHW\\Desktop\\project\\pygame_basic\\character.png")
+enemy = pygame.image.load("C:\\Users\\KHW\\Desktop\\project\\pygame_basic\\enemy.png")
 enemy_size = enemy.get_rect().size #이미지의 크기를 구해옴
 enemy_width = enemy_size[0] #캐릭터의 가로크기
 enemy_height = enemy_size[1] #캐릭터의 세로크기
 enemy_x_pos = (screen_width / 2) - (enemy_width / 2) #화면 가로의 절반 크기에 해당하는 곳에 위치(가로)
-enemy_y_pos = screen_height - enemy_height #화면 세로 크기 가장 아래에 해당하는 곳에 위치(세로)
+enemy_y_pos = (screen_height / 2) - (enemy_height / 2) #화면 세로 크기 가장 아래에 해당하는 곳에 위치(세로)
 
 #이벤트 루프
 running = True #게임이 진행중인가?
@@ -92,9 +92,28 @@ while running:
     elif character_y_pos > screen_height - character_height:
         character_y_pos = screen_height - character_height
 
-    screen.blit(background, (0, 0)) #배경 그리기
 
+    #충돌 처리를 위한 rect 정보 업데이트
+    character_rect = character.get_rect()
+    character_rect.left = character_x_pos
+    character_rect.top = character_y_pos
+
+    enemy_rect = enemy.get_rect()
+    enemy_rect.left = enemy_x_pos
+    enemy_rect.top = enemy_y_pos
+
+    #충돌 체크
+    if character_rect.colliderect(enemy_rect):
+        print("충돌했어요")
+        running = False
+    
+    
+    
+    
+    
+    screen.blit(background, (0, 0)) #배경 그리기
     screen.blit(character, (character_x_pos, character_y_pos)) # 캐릭터 그리기
+    screen.blit(enemy, (enemy_x_pos, enemy_y_pos))# 적 그리기
 
 
     #screen.fill((0, 0, 255)) 같이 그냥 한번에 채워넣기도 가능
