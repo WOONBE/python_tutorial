@@ -1,5 +1,5 @@
 import pygame
-
+######################################################
 pygame.init() #초기화(반드시 필요)
 
 #화면 크기 설정
@@ -8,11 +8,15 @@ screen_height = 640 #세로 크기
 screen = pygame.display.set_mode((screen_width, screen_height))
 
 #화면 타이틀 설정
-pygame.display.set_caption("Nado game") #게임 이름
+pygame.display.set_caption("게임 이름") #게임 이름
 
 
 # FPS
 clock = pygame.time.Clock()
+##########################################################
+
+# 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 폰트 등)
+
 
 
 #배경 이미지 불러오기
