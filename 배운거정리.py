@@ -13,7 +13,7 @@ print(string)
 a = "exexex"
 a.upper/lower() 형식으로 사용
 
-#strip/isAA
+#strip/isAA 3
 공백제거/ 문자열의 구성 파악
 
 #find/rfind
